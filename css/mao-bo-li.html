@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>毛玻璃</title>
+	<style type="text/css">
+		html {
+			height: 100%;
+			position: relative;
+		}
+		body {
+			background: url(juice.jpg) 0 / cover fixed;
+			display: -webkit-flex;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 100%;
+			margin: 0;
+		}
+		main {
+			width: 700px;
+			padding: 50px;
+			font-size: 16px;
+			line-height: 1.5;
+			box-shadow: 1px 5px 16px 0 rgba(0,0,0,.3);
+			text-align: justify;
+			background: hsla(0,0%,100%,.3);
+			position: relative;
+			overflow: hidden;
+		}
+		main::before {
+			content: '';
+			position: absolute;
+			top: 0; right: 0; bottom: 0; left: 0;
+			z-index: -1;
+			background: url(juice.jpg) 0 / cover fixed;
+			filter: blur(20px);
+			margin: -30px;
+		}
+		footer {
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+<main>
+	<blockquote>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<footer>-
+			<cite>
+				Oscar Wilde,
+				The Picture of Dorian Gray
+			</cite>
+		</footer>
+	</blockquote>
+</main>
+</body>
+</html>
